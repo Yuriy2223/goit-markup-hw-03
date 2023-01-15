@@ -14,6 +14,40 @@ body {
   color: var(--grey-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/*outline: 2px solid red;*/
+.header {
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
 .header-logo {
   text-transform: uppercase;
   font-family: "Raleway";
@@ -22,6 +56,7 @@ body {
   line-height: 1.33;
   letter-spacing: 0.03em;
   color: var(--blue-color);
+  margin-right: 76px;
 }
 
 .header-logo-span {
@@ -34,6 +69,25 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+.header-container {
+  display: flex;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header-list {
+  display: flex;
+  gap: 40px;
+}
+
+.address-list {
+  display: flex;
 }
 
 .header-list .link:hover,
@@ -55,6 +109,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--grey-color);
+  padding-right: 40px;
 }
 
 .address-list .address-mail:hover,
@@ -77,6 +132,8 @@ body {
 
 .hero {
   background: var(--black-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -85,6 +142,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-color);
+  margin-bottom: 48px;
 }
 
 .hero-button {
@@ -96,7 +154,20 @@ body {
   letter-spacing: 0.04em;
   color: var(--white-color);
   background: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   padding: 16px 32px;
+  margin: 0 auto;
+  display: block;
+}
+
+.main {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.main-container {
+  display: flex;
 }
 
 .main-title {
@@ -114,6 +185,13 @@ body {
 
 .main-list {
   list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.main-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .main-subtitle {
@@ -122,11 +200,17 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--black-color);
+  margin-bottom: 8px;
 }
 
 .main-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.work {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .work-title {
@@ -136,10 +220,23 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--black-color);
+  margin-top: 0;
+  margin-bottom: 72px;
 }
 
 .work-list {
   list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.work-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.team {
+  padding-top: 120px;
+  padding-bottom: 152px;
 }
 
 .team-title {
@@ -149,10 +246,15 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--black-color);
+  margin-bottom: 72px;
 }
 
 .team-list {
   list-style: none;
+  display: flex;
+  align-items: center;
+  width: calc((100% - 72px) / 4);
+  gap: 24px;
 }
 
 .team-subtitle {
@@ -161,15 +263,25 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--black-color);
+  margin-top: 32px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 .team-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .footer {
   background: var(--black-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.logo-container {
+  width: 264px;
 }
 
 .footer-logo {
@@ -191,6 +303,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light-grey-color);
+  margin-top: 16px;
 }
 
 /*------------------PORTFOLIO----------------*/
@@ -201,6 +314,21 @@ button:focus {
   background: #404bbf;
 }
 
+.button {
+  padding-top: 96px;
+  padding-bottom: 72px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-list {
+  display: flex;
+  gap: 24px;
+}
+
 .concept-button-all {
   cursor: pointer;
   font-family: inherit;
@@ -209,6 +337,8 @@ button:focus {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--button-blue-color);
+  border-radius: 4px;
+  padding: 12px 24px;
 }
 
 .concept-button-website {
@@ -219,6 +349,8 @@ button:focus {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--button-blue-color);
+  border-radius: 4px;
+  padding: 12px 24px;
 }
 
 .concept-button-app {
@@ -229,6 +361,8 @@ button:focus {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--button-blue-color);
+  border-radius: 4px;
+  padding: 12px 24px;
 }
 
 .concept-button-design {
@@ -239,6 +373,8 @@ button:focus {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--button-blue-color);
+  border-radius: 4px;
+  padding: 12px 24px;
 }
 
 .concept-button-marketing {
@@ -249,9 +385,11 @@ button:focus {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--button-blue-color);
+  border-radius: 4px;
+  padding: 12px 24px;
 }
 
-.concept-title {
+.button-title {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -264,15 +402,34 @@ button:focus {
   margin: -1px;
 }
 
+.concept {
+  padding-bottom: 120px;
+}
+
+.concept-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.concept-item {
+  width: calc((100% - 48px) / 3);
+}
+
 .concept-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--black-color);
+  margin-top: 32px;
 }
 
 .concept-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-top: 8px;
+  margin-bottom: 32px;
 }
