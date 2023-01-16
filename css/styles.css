@@ -1,3 +1,31 @@
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
 :root {
   --blue-color: #4d5ae5;
   --black-color: #2e2f42;
@@ -17,25 +45,6 @@ body {
 /*width: 1440px;
   border: 5px solid rgb(255, 71, 215);
   box-sizing: border-box;*/
-
-h1,
-h2,
-h3,
-h4,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-img {
-  display: block;
-}
 
 .container {
   width: 1158px;
@@ -63,14 +72,6 @@ img {
 
 .header-logo-span {
   color: var(--black-color);
-}
-
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
 }
 
 .header-container {
@@ -160,7 +161,7 @@ img {
   letter-spacing: 0.04em;
   color: var(--white-color);
   background: var(--blue-color);
-  border: var(--blue-color);
+  border: 1px var(--blue-color);
   border-radius: 4px;
   padding: 16px 32px;
   margin: 0 auto;
@@ -241,10 +242,9 @@ img {
 }
 
 .team {
-  padding-top: 120px;
   padding-bottom: 152px;
 }
-
+/*padding-top: 120px;*/
 .team-title {
   font-size: 36px;
   line-height: 1.11;
@@ -320,20 +320,24 @@ button:focus {
   background: #404bbf;
 }
 
-.button {
+/*.button {
   padding-top: 96px;
   padding-bottom: 72px;
-}
+}*/
 
-.button-container {
+.concept-container-button {
+  padding-top: 96px;
+  padding-bottom: 72px;
+  gap: 24px;
   display: flex;
   justify-content: center;
 }
+/*justify-content: center;
 
 .button-list {
   display: flex;
   gap: 24px;
-}
+}*/
 
 .concept-button-all {
   cursor: pointer;
@@ -417,13 +421,22 @@ button:focus {
   padding-bottom: 120px;
 }
 
-.concept-list {
+.concept-container-content {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
 }
+
+.concept-list {
+}
+
+/* display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;*/
 
 .concept-item {
   flex-basis: calc((100% - 48px) / 3);
